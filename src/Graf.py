@@ -161,7 +161,5 @@ class Graf:
 			for vertex2 in self.vertex:
 				if(self.graf[self.vertexidx[vertex1[0]]][self.vertexidx[vertex2[0]]] == 0):
 					self.graf[self.vertexidx[vertex1[0]]][self.vertexidx[vertex2[0]]] = 0
-				elif(self.graf[self.vertexidx[vertex1[0]]][self.vertexidx[vertex2[0]]] == -1):
-					self.graf[self.vertexidx[vertex1[0]]][self.vertexidx[vertex2[0]]] = 0
 				else:
 					self.graf[self.vertexidx[vertex1[0]]][self.vertexidx[vertex2[0]]] = self.haversineFormula(vertex1[1][0], vertex1[1][1], vertex2[1][0], vertex2[1][1])
