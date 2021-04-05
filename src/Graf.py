@@ -131,13 +131,13 @@ class Graf:
 		if(len(self.solutionPath) == 0):
 			print("Tidak ada solusi")
 		else:
-			strPrint = ""
+			strPrint = "Shortest path dari " + self.solutionPath[0][0][0] + " ke " + self.solutionPath[0][len(self.solutionPath[0])-1][0] + " adalah\n"
 			for vertex in self.solutionPath[0]:
 				strPrint += vertex[0]
 				if(vertex[0] != self.solutionPath[0][len(self.solutionPath[0])-1][0]):
 					strPrint += " -> "
 				else:
-					strPrint += "\nDengan total jarak adalah " + str(vertex[2])
+					strPrint += "\nDengan total jarak adalah " + str(vertex[2]) + " meter"
 			print(strPrint)
 
 	# Mengosongkan graf
