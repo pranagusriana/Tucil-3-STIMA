@@ -70,5 +70,5 @@ Maka kolom satu dan baris satu merepresentasikan hubungan Simpul_A dan simpul ia
 ## Author
 | Nama | NIM |
 |------|-----|
-| [Prana Gusriana](github.com/pranagusriana) | 13519195|
-| [Rais Vaza Man Tazakka](github.com/raisvaza) | 13519060 |
+| [Prana Gusriana](https://github.com/pranagusriana) | 13519195|
+| [Rais Vaza Man Tazakka](https://github.com/raisvaza) | 13519060 |
