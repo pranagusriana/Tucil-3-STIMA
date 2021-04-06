@@ -4,6 +4,7 @@ Implementasi Algoritma A* untuk Menentukan Lintasan Terpendek
 * [Requirement](#requirement)
 * [Cara Menggunakan Program](#cara-menggunakan-program)
 * [Catatan](#catatan)
+* [Author](#author)
 
 ## Penjelasan Singkat Program
 Untuk dapat mencari lintasan terpendek dari sebuah input file graf pada peta kami menggunakan algoritma A* (Astar). Algoritma A* yang kami buat hampir mirip seperti algoritma BFS (Breadth First Search) karena pencarian lintasan terpendek dilakukan dengan membangkitkan simpul yang bertetangga dengan simpul yang sedang diperiksa tetapi pada algoritma A* urutan pembangkitan simpulnya diurutkan berdasarkan nilai F(n). F(n) merupakan heuristic evaluation fuction. Karena ide dari algoritma A* ini adalah menghindari untuk membangkitkan lintasan yang costnya mahal, maka nilai F(n) = g(n) + h(n), g(n) merupakan cost seberapa jauh untuk mencapai simpul n dari simpul awal serta h(n) merupakan estimasi biaya dari simpul n ke simpul goal. Pada pengerjaan tugas kecil 3 ini, nilai g(n) merupakan total jarak yang telah ditempuh dari simpul awal ke simpul n dan nilai h(n) merupakan jarak garis lurus dari simpul n ke simpul goal.
@@ -65,3 +66,9 @@ Maka kolom satu dan baris satu merepresentasikan hubungan Simpul_A dan simpul ia
 ![inputjarak](./img/inputjarak.PNG )
 - Berikut adalah contoh input dengan elemen matriks ketetanggaan berupa boolean: </br>
 ![inputbool](./img/inputbool.PNG )
+
+## Author
+| Nama | NIM |
+|------|-----|
+| [Prana Gusriana](github.com/pranagusriana) | 13519195|
+| [Rais Vaza Man Tazakka](github.com/raisvaza) | 13519060 |
