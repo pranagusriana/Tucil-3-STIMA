@@ -18,20 +18,20 @@ Untuk dapat mengimplementasikan algoritma A* ini kami membutuhkan sebuah kelas p
 1. Untuk dapat menjalankan program pertama lakukan clone pada repository git ini </br>
 `	git clone "https://github.com/pranagusriana/Tucil-3-STIMA.git"`
 2. Setelah itu buka folder src pada command promt </br>
-![open-src](./img/cmd.png)
+![open-src](./img/cmd.PNG)
 3. Setelah requirement terpenuhi ketikkan jupyter notebook untuk membuka jupyter notebook </br>
-![open-jupyter](./img/buka_jupyter.png)
+![open-jupyter](./img/buka_jupyter.PNG)
 4. Setelah jupyter notebook terbuka, maka klik pada file MainProgram.ipynb </br>
-![open-main-program](./img/klik_mp.png)
+![open-main-program](./img/klik_mp.PNG)
 5. Setelah file MainProgram.ipynb terbuka lakukan restart kernel </br>
-![restart-kernel](./img/restart.png)
+![restart-kernel](./img/restart.PNG)
 6. Pertama kali lakukan running pada cell 0 untuk dapat mengimport modul dan membuat objek graf yang akan digunakan selama program berjalan </br>
-![running-cell-0](./img/cell0run.png)
+![running-cell-0](./img/cell0run.PNG)
 7. Untuk dapat menampilkan visualisasi peta dan mencari lintasan terpendek pada peta pertama-tama inputkan dulu nama nama file yang berada pada folder test yang akan diinputkan (cukup masukkan nama filenya saja misal peta-itb.txt). Input file dilakukan dengan melakukan running pada cell 1. Program akan meminta input pada user dan user harus mengisinya jika ingin menampilkan visualisasi dan mencari lintasan terpendek. </br>
-![running-cell-1](./img/cell1inp.png)
+![running-cell-1](./img/cell1inp.PNG)
 8. Untuk dapat melihat visualisasi awal peta bisa dilakukan dengan melakukan running pada cell 2. </br>
-![running-cell-2](./img/cell2.png)
+![running-cell-2](./img/cell2.PNG)
 9. Untuk dapat mencari lintasan terpendek antar dua simpul (simpul awal ke simpul goal) silahkan lakukan running pada cell 3. Program akan meminta input nama simpul awal dan simpul goal pada user lalu akan menampilkan lintasan terpendek dalam bentuk text beserta jaraknya. <br>**CATATAN:** Nama simpul dapat diketahui dengan mengklik marker berwarna merah pada visualisasi peta di cell 2. </br>
-![running-cell-3](./img/cell3.png)
+![running-cell-3](./img/cell3.PNG)
 10. Untuk dapat memvisualisasikan jalur terpendek pada peta, silahkan lakukan running pada cell 4. </br>
-![running-cell-4](./img/cell4.png)
+![running-cell-4](./img/cell4.PNG )
