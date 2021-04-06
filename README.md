@@ -1,5 +1,9 @@
-# Tucil-3-STIMA
-Tugas Kecil 3 IF2211 Strategi Algoritma - Implementasi Algoritma A* untuk Menentukan Lintasan Terpendek
+# Tugas Kecil 3 IF2211 Strategi Algoritma
+Implementasi Algoritma A* untuk Menentukan Lintasan Terpendek
+* [Penjelasan Singkat Program](#penjelasan-singkat-program)
+* [Requirement](#requirement)
+* [Cara Menggunakan Program](#cara-menggunakan-program)
+* [Catatan](#catatan)
 
 ## Penjelasan Singkat Program
 Untuk dapat mencari lintasan terpendek dari sebuah input file graf pada peta kami menggunakan algoritma A* (Astar). Algoritma A* yang kami buat hampir mirip seperti algoritma BFS (Breadth First Search) karena pencarian lintasan terpendek dilakukan dengan membangkitkan simpul yang bertetangga dengan simpul yang sedang diperiksa tetapi pada algoritma A* urutan pembangkitan simpulnya diurutkan berdasarkan nilai F(n). F(n) merupakan heuristic evaluation fuction. Karena ide dari algoritma A* ini adalah menghindari untuk membangkitkan lintasan yang costnya mahal, maka nilai F(n) = g(n) + h(n), g(n) merupakan cost seberapa jauh untuk mencapai simpul n dari simpul awal serta h(n) merupakan estimasi biaya dari simpul n ke simpul goal. Pada pengerjaan tugas kecil 3 ini, nilai g(n) merupakan total jarak yang telah ditempuh dari simpul awal ke simpul n dan nilai h(n) merupakan jarak garis lurus dari simpul n ke simpul goal.
@@ -35,3 +39,29 @@ Untuk dapat mengimplementasikan algoritma A* ini kami membutuhkan sebuah kelas p
 ![running-cell-3](./img/cell3.PNG)
 10. Untuk dapat memvisualisasikan jalur terpendek pada peta, silahkan lakukan running pada cell 4. </br>
 ![running-cell-4](./img/cell4.PNG )
+
+## CATATAN
+- Fitur dari program dapat terus dijalankan asal cell 0 sudah di run (sehingga modul yang diimport dapat digunakan oleh program) serta untuk dapat melihat visualisasi dan mencari lintasan terpendek user harus menginputkan file input. Berikut adalah format file input.
+- Baris pertama merupakan integer N yang merepresentasikan banyaknya simpul
+- N baris berikutnya merupakan simpulnya dengan format
+		nama_simpul <spasi> latitude <spasi> longitude
+- CATATAN: nama_simpul harus unik dan tidak mengandung spasi
+		   latitude dan longitude merupakan koordinat dari simpul, latitude merupakan garis lintang dan longitude merupakan garis bujur
+- Baris selanjutnya merupakan matriks ketetanggaan dengan elemen berupa jarak ataupun boolean yang menunjukkan adanya hubungan antar simpul
+	```
+  0 jika tidak terdapat hubungan antar dua simpul
+  1 atau jarak jika terdapat hubungan antar dua simpul
+  Jika menggunakan jarak sebagai elemen, maka semua hubugan harus dalam jarak juga. Jarak dalam meter.
+	```
+- Urutan simpul yang diinputkan sesuai dengan urutan indeks pada graf ketetanggaan </br>
+```
+Misal jika input simpulnya seperti ini
+		2
+		Simpul_A 1 2
+		Simpul_B 2 3
+Maka kolom satu dan baris satu merepresentasikan hubungan Simpul_A dan simpul iainnya dan kolom dua serta baris 2 merepresentasikan hubungan Simpul_B dan simpul lainnya
+  ```
+- Berikut adalah contoh input dengan elemen matriks ketetanggaan berupa jarak </br>
+![inputjarak](./img/inputjarak.PNG )
+- Berikut adalah contoh input dengan elemen matriks ketetanggaan berupa boolean: </br>
+![inputbool](./img/inputbool.PNG )
